@@ -1,0 +1,3 @@
+function calculateNekogo() {
+    alert("nyanyan");
+}
