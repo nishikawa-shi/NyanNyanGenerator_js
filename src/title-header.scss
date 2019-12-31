@@ -1,0 +1,14 @@
+.title-header {
+  background-color: #fdf6e3;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    "Meiryo", "ＭＳ Ｐゴシック", "sans-serif";
+  &__main-text {
+    color: #002b36;
+  }
+  &__sub-text_description {
+    color: #9393a1;
+  }
+  &__sub-text_datetime {
+    color: #9393a1;
+  }
+}

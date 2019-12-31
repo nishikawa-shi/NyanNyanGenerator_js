@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/main.css"
+    />
     <script src="src/main.js"></script>
     <title>NyanNyanGenerator</title>
-</head>
-<body>
-    <h1>Nishik 1st js training (*^^*)/~</h1>
-    <h2>at 2019-2020 winter vacation.</h2>
-    <button onClick="calculateNekogo()">getNekogo</button>
-</body>
+  </head>
+  <body>
+    <header class="title-header">
+      <h1 class="title-header__main-text">NyanNyanGenerator</h1>
+      <h2 class="title-header__sub-text_description">
+        Nishik 1st js training (*^^*)/~
+      </h2>
+      <h2 class="title-header__sub-text_datetime">
+        at 2019-2020 winter vacation.
+      </h2>
+    </header>
+    <section class="calculation-section">
+      <p class="calculation-section__description">Input text below.</p>
+      <input type="text" class="calculation-section__input" />
+      <button
+        onClick="calculateNekogo()"
+        class="calculation-section__calculate-button"
+      >
+        getNekogo
+      </button>
+      <p class="calculation-section__placeholder">result is shown here.</p>
+    </section>
+  </body>
 </html>
