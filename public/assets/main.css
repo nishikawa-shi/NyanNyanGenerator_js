@@ -1,9 +1,29 @@
-body {background-color: #fdf6e3}
-h1 {
-    color: #002b36;
-    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ','Meiryo','ＭＳ Ｐゴシック','sans-serif';
+.calculation-section {
+  background-color: #fd1111;
 }
-h2 {
-    color: #9393a1;
-    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ','Meiryo','ＭＳ Ｐゴシック','sans-serif';
+
+.calculation-section__description {
+  color: #002b36;
+}
+
+.calculation-section__placeholder {
+  color: #9393a1;
+}
+@charset "UTF-8";
+
+.title-header {
+  background-color: #fdf6e3;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "sans-serif";
+}
+
+.title-header__main-text {
+  color: #002b36;
+}
+
+.title-header__sub-text_description {
+  color: #9393a1;
+}
+
+.title-header__sub-text_datetime {
+  color: #9393a1;
 }
