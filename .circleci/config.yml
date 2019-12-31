@@ -15,6 +15,7 @@ jobs:
       - image: circleci/node:8.17
     steps:
       - checkout
+      - run: npm install
       - run: npm run buildCss
       - firebase-deploy/deploy:
           token: "${FIREBASE_DEPLOY_TOKEN_D}"
