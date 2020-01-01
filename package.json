@@ -10,7 +10,8 @@
   "license": "ISC",
   "scripts": {
     "lintToJs": "eslint public",
-    "codeFormatToHtml": "prettier public/index.html -c",
+    "codeFormatCheckToHtml": "prettier public/index.html -c",
+    "codeFormatCheckToCss": "prettier src/* -c",
     "buildCss": "gulp sassBuild"
   },
   "devDependencies": {

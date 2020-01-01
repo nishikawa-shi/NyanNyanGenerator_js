@@ -9,7 +9,8 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run lintToJs
-      - run: npm run codeFormatToHtml
+      - run: npm run codeFormatCheckToHtml
+      - run: npm run codeFormatCheckToCss
   deploy:
     docker:
       - image: circleci/node:8.17
