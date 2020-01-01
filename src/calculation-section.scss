@@ -1,4 +1,6 @@
 .calculation-section {
+  display: flex;
+  flex-direction: column;
   background-color: #fdf6e3;
   margin: 48px 16px 16px 16px;
   padding: 16px 16px 16px 24px;
@@ -6,31 +8,39 @@
   color: #002b36;
   font-size: 16px;
 
+  &__input-container {
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: row;
+  }
   &__input {
+    flex: 9 0 0%;
     font-size: 16px;
     border-radius: 8px;
+    margin: 8px;
     padding: 8px;
     border: 1px solid #839496;
-    width: 85%;
     vertical-align: top;
   }
   &__calculate-button {
+    flex: 1 0 0%;
     display: inline-block;
     font-size: 16px;
-    padding: 4px 8px 4px 8px;
+    margin: 8px;
+    padding: 8px;
     border-radius: 8px;
     border: 1px solid #839496;
     background-color: #fdf6e3;
     transition: 0.2s;
     text-align: center;
-    width: 10%;
   }
   &__calculate-button:hover {
     background: #268bd2;
     color: #fdf6e3;
   }
   &__nekosan {
-    margin: 8px 0px 0px 0px;
+    flex: 1 0 0%;
+    margin: 8px;
     padding: 8px;
     background-color: #ffffff;
     border-radius: 8px;
