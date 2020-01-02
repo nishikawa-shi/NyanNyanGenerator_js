@@ -17,23 +17,23 @@
   }
   &__input {
     flex: 8 0 0%;
-    font-size: 16px;
+    font-size: $font-size-medium;
     border-radius: $space-small;
     margin: $space-small;
     padding: $space-small;
-    border: 1px solid $solarized-base0;
+    border: $line-width-sharp solid $solarized-base0;
     vertical-align: top;
   }
   &__calculate-button {
     flex: 2 0 0%;
     display: inline-block;
-    font-size: 16px;
+    font-size: $font-size-medium;
     margin: $space-small;
     padding: $space-small;
     border-radius: $space-small;
-    border: 1px solid $solarized-base0;
+    border: $line-width-sharp solid $solarized-base0;
     background-color: $solarized-base3;
-    transition: 0.2s;
+    transition: $transition-time-short;
     text-align: center;
   }
   &__calculate-button:hover {
