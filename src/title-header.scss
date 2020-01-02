@@ -1,16 +1,18 @@
+@import "global";
+
 .title-header {
-  background-color: #fdf6e3;
+  background-color: $solarized-base3;
   margin-top: 16px;
   padding: 16px;
   border-radius: 16px;
 
   &__main-text {
-    color: #002b36;
+    color: $solarized-base03;
     margin: 16px;
   }
   &__sub-text_description {
     margin: 8px;
     padding-left: 8px;
-    color: #839496;
+    color: $solarized-base0;
   }
 }

@@ -1,11 +1,13 @@
+@import "global";
+
 .calculation-section {
   display: flex;
   flex-direction: column;
-  background-color: #fdf6e3;
+  background-color: $solarized-base3;
   margin-top: 16px;
   padding: 16px 16px 16px 24px;
   border-radius: 16px;
-  color: #002b36;
+  color: $solarized-base03;
   font-size: 16px;
 
   &__input-container {
@@ -19,7 +21,7 @@
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
-    border: 1px solid #839496;
+    border: 1px solid $solarized-base0;
     vertical-align: top;
   }
   &__calculate-button {
@@ -29,20 +31,20 @@
     margin: 8px;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #839496;
-    background-color: #fdf6e3;
+    border: 1px solid $solarized-base0;
+    background-color: $solarized-base3;
     transition: 0.2s;
     text-align: center;
   }
   &__calculate-button:hover {
-    background: #268bd2;
-    color: #fdf6e3;
+    background: $solarized-blue;
+    color: $solarized-base3;
   }
   &__nekosan {
     flex: 1 0 0%;
     margin: 8px;
     padding: 8px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
   }
 }
