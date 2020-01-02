@@ -1,12 +1,14 @@
+@import "global";
+
 .calculation-section {
   display: flex;
   flex-direction: column;
-  background-color: #fdf6e3;
-  margin-top: 16px;
-  padding: 16px 16px 16px 24px;
-  border-radius: 16px;
-  color: #002b36;
-  font-size: 16px;
+  background-color: $solarized-base3;
+  margin-top: $space-medium;
+  padding: $space-medium $space-medium $space-medium $space-large;
+  border-radius: $space-medium;
+  color: $solarized-base03;
+  font-size: $space-medium;
 
   &__input-container {
     display: flex;
@@ -15,34 +17,34 @@
   }
   &__input {
     flex: 8 0 0%;
-    font-size: 16px;
-    border-radius: 8px;
-    margin: 8px;
-    padding: 8px;
-    border: 1px solid #839496;
+    font-size: $font-size-medium;
+    border-radius: $space-small;
+    margin: $space-small;
+    padding: $space-small;
+    border: $line-width-sharp solid $solarized-base0;
     vertical-align: top;
   }
   &__calculate-button {
     flex: 2 0 0%;
     display: inline-block;
-    font-size: 16px;
-    margin: 8px;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #839496;
-    background-color: #fdf6e3;
-    transition: 0.2s;
+    font-size: $font-size-medium;
+    margin: $space-small;
+    padding: $space-small;
+    border-radius: $space-small;
+    border: $line-width-sharp solid $solarized-base0;
+    background-color: $solarized-base3;
+    transition: $transition-time-short;
     text-align: center;
   }
   &__calculate-button:hover {
-    background: #268bd2;
-    color: #fdf6e3;
+    background: $solarized-blue;
+    color: $solarized-base3;
   }
   &__nekosan {
     flex: 1 0 0%;
-    margin: 8px;
-    padding: 8px;
-    background-color: #ffffff;
-    border-radius: 8px;
+    margin: $space-small;
+    padding: $space-small;
+    background-color: white;
+    border-radius: $space-small;
   }
 }

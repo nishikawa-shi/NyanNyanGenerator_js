@@ -1,16 +1,18 @@
+@import "global";
+
 .title-header {
-  background-color: #fdf6e3;
-  margin-top: 16px;
-  padding: 16px;
-  border-radius: 16px;
+  background-color: $solarized-base3;
+  margin-top: $space-medium;
+  padding: $space-medium;
+  border-radius: $space-medium;
 
   &__main-text {
-    color: #002b36;
-    margin: 16px;
+    color: $solarized-base03;
+    margin: $space-medium;
   }
   &__sub-text_description {
-    margin: 8px;
-    padding-left: 8px;
-    color: #839496;
+    margin: $space-small;
+    padding-left: $space-small;
+    color: $solarized-base0;
   }
 }
