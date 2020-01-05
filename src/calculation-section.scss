@@ -37,12 +37,10 @@
     text-align: center;
     &:active {
       background: $solarized-blue;
-      color: $solarized-base3;
     }
     &:hover {
       @media screen and (min-width: $width-pc-min) {
         background: $solarized-blue;
-        color: $solarized-base3;
       }
     }
   }
