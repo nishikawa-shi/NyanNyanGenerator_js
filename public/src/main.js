@@ -1,5 +1,20 @@
-function calculateNekogo() {
-    alert("nyanyan");
+function copyNekogo() {
+    let currentRawText = document.getElementsByClassName("calculation-section__input")[0].value
+    if (currentRawText === "") {
+        return
+    }
+
+    let element = document.getElementsByClassName("calculation-section__nekosan")[0]
+
+    let selection = window.getSelection()
+    selection.removeAllRanges()
+
+    let range = document.createRange()
+    range.selectNodeContents(element)
+    selection.addRange(range)
+    document.execCommand("copy")
+    selection.removeAllRanges()
+    alert(`copied ${element.textContent} 😺`)
 }
 
 var nyannyanApp = new Vue({
