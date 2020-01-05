@@ -10,7 +10,7 @@
       media="screen"
       href="assets/main.css"
     />
-    <script src="src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>NyanNyanGenerator</title>
   </head>
   <body>
@@ -22,17 +22,25 @@
         </h4>
       </header>
       <section class="calculation-section">
-        <div class="calculation-section__input-container">
-          <input type="text" class="calculation-section__input" />
-          <div
-            onClick="calculateNekogo()"
-            class="calculation-section__calculate-button"
-          >
-            😺
+        <div id="nyannyan">
+          <div class="calculation-section__input-container">
+            <input
+              v-model="rawText"
+              v-bind:placeholder="placeHolder"
+              type="text"
+              class="calculation-section__input"
+            />
+            <div
+              onClick="calculateNekogo()"
+              class="calculation-section__calculate-button"
+            >
+              😺
+            </div>
           </div>
+          <p class="calculation-section__nekosan">{{ nyanText }}</p>
         </div>
-        <p class="calculation-section__nekosan">Result is shown here.</p>
       </section>
     </div>
   </body>
+  <script src="src/main.js"></script>
 </html>

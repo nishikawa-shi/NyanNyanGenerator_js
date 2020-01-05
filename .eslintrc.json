@@ -1,9 +1,14 @@
 {
-    "extends": ["eslint:recommended"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
     "plugins": [],
     "parserOptions": {},
     "env": {"browser": true},
-    "globals": {},
+    "globals": {
+        "Vue": true
+    },
     "rules": {
         "no-unused-vars": "warn"
     }
