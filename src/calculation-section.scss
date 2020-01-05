@@ -35,10 +35,14 @@
     background-color: $solarized-base3;
     transition: $transition-time-short;
     text-align: center;
-  }
-  &__calculate-button:hover {
-    background: $solarized-blue;
-    color: $solarized-base3;
+    &:active {
+      background: $solarized-blue;
+    }
+    &:hover {
+      @media screen and (min-width: $width-pc-min) {
+        background: $solarized-blue;
+      }
+    }
   }
   &__nekosan {
     flex: 1 0 0%;
